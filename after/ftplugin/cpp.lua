@@ -1,0 +1,10 @@
+-- C++ Style
+-- Runs for every buffer with filetype `cpp` (*.cpp, *.cc, *.hpp, and *.h by
+-- default; plain C files are filetype `c` and use after/ftplugin/c.lua).
+-- Indentation currently comes from the global 2-space defaults in
+-- lua/config/options.lua, so nothing needs overriding here yet.
+--
+-- Keep settings buffer-local so they don't leak into other filetypes:
+--   vim.bo.shiftwidth = 4                                   -- buffer option
+--   vim.opt_local.colorcolumn = "80"                        -- window option
+--   vim.keymap.set("n", "<leader>x", ..., { buffer = true }) -- buffer keymap
